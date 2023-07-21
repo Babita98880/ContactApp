@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--    ImageView: Contact thumbnail-->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#c0c0c0"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_person_24"/>
+
+    <!--    EditText: First Name -->
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/profileImage"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="First Name"
+        android:textColor="#000"
+        android:inputType="textPersonName"
+        android:background="#fff"/>
+
+    <!--    EditText: Last Name -->
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/editTextFirstName"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Last Name"
+        android:textColor="#000"
+        android:inputType="textPersonName"
+        android:background="#fff"/>
+
+
+    <!--    EditText: Phone Number -->
+    <EditText
+        android:id="@+id/editTextPhoneHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Phone Number "
+        android:textColor="#000"
+        android:inputType="phone"
+        android:background="#fff"/>
+
+
+
+    <!--    FloatingActionButton: To save contact-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="addContact"
+        android:src="@drawable/baseline_done_24"/>
+</RelativeLayout>
