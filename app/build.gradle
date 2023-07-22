@@ -6,7 +6,6 @@ plugins {
 android {
     namespace 'com.example.contactapp'
     compileSdk 33
-
     defaultConfig {
         applicationId "com.example.contactapp"
         minSdk 24
